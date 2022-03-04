@@ -1,0 +1,77 @@
+<!DOCTYOE HTML> 
+<html>
+	<head>
+		<META charset="UTF-8">
+		<META name="author" content="javier">
+		<META name="keywords" lang="es" content="Bitcoin">
+		<link rel="shortcut icon" href="imagenesw/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="../cssweb/form.css" type="text/css"/>
+    <title>Encuesta de satisfacción</title>
+  </head>
+  <body>
+  <div id="contenedor">
+	<div id="formulario">
+    <h1>Le agradezco que conteste sobre su opinion acerca de la web</h1>
+    <form id="encuesta" action="aqui.html" method="POST">
+      <section>
+        <label for="id">Introduzca su nombre de usuario:  </label>
+        <input type="text" id="id" name="id"  pattern="[a-z]" >
+      </section>
+      <br>
+      <section>
+        <label for="satisfaccion">Nivel de satisfacción con la web (de 0 a 5): </label>
+        <input type="number" id="satisfaccion" name="satisfaccion" min="1" max="5" step="1" required>
+      </section>
+      <br>
+      <section>
+        <label for="e-mail">Introduzca su email: </label>
+        <input type="email" id="e-mail" name="e-mail" required>
+      </section>
+      <br>
+      <section>
+        <label for="positivos">¿Qué puntos <b>positivos</b> le parece que tiene la web?</label>
+        <br>
+        <textarea id="positivos" name="positivos" rows="4" cols="40" minlength="20" maxlength="1000" placeholder="Escriba aquí..."></textarea>
+      </section>
+      <br>
+      <section>
+        <label for="negativos">¿Qué puntos <b>negativos</b> le parece que tiene la web?</label>
+        <br>
+        <textarea id="negativos" name="negativos" rows="4" cols="40" minlength="20" maxlength="1000" placeholder="Escriba aquí..."></textarea>
+      </section>
+      <br>
+      <section>
+        <h4>Evalúa las siguientes características del producto</h4>
+        <span><em>Diseño: </em></span>
+        <label for="exc-dis">Excelente</label>
+        <input type="radio" id="exc-dis" name="diseño" value="Excelente" checked>
+        <label for="bue-dis">Bueno</label>
+        <input type="radio" id="bue-dis" name="diseño" value="Bueno">
+        <label for="reg-dis">Regular</label>
+        <input type="radio" id="reg-dis" name="diseño" value="Regular">
+        <label for="pes-dis">Pésimo</label>
+        <input type="radio" id="pes-dis" name="diseño" value="Pésimo">
+        <br>
+        <br>
+        <label for="calidad"><em>Contenido: </em></label>
+        <select id="contenido" name="contenido">
+          <option value="Excelente">Excelente</option>
+          <option value="Bueno">Bueno</option>
+          <option value="Regular">Regular</option>
+          <option value="Pésimo">Pésimo</option>
+        </select>
+        <br>
+        <br>
+        <label for="uso"><em>Explicaciones:  </em></label>
+        <span>Pésimo</span>
+        <input type="range" id="uso" name="uso" min="1" max="4" step="1">
+        <span>Excelente</span>
+      </section>
+      <section>
+        <br>
+        <input type="submit" id="submit" name="submit" value="Enviar!">
+    </form>
+	</div>
+	</div>
+  </body>
+</html>
