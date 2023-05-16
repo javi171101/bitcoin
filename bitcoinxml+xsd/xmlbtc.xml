@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<autores xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+				xsi:noNamespaceSchemaLocation = "pintoressinxs.xsd">
+	<autor>
+		<codigo_autor>aut001</codigo_autor>
+		<nombre>Ray Dalio</nombre>
+		<año_naci>1949</año_naci>
+		<pais>eeuu</pais>
+		<categoria>economia</categoria>
+		<libros>
+			<libro>
+				<codigo_libro>RD001</codigo_libro>
+				<nombre>principios</nombre>
+				<año_libr>2018</año_libr>
+				<editorial>deusto</editorial>
+				<paginas duracion="largo">608</paginas>
+			</libro>
+			
+			<libro>
+				<codigo_libro>RD002</codigo_libro>
+				<nombre>principios para superar una crisis de gran endeudamiento</nombre>
+				<año_libr>2021</año_libr>
+				<editorial>valor editions</editorial>
+				<paginas duracion="medio">487</paginas>
+			</libro>
+			
+			<libro>
+				<codigo_libro>RD003</codigo_libro>
+				<nombre>principios para enfrentarse a un nuevo orden mundial</nombre>
+				<año_libr>2022</año_libr>
+				<editorial>deusto</editorial>
+				<paginas duracion="largo">672</paginas>
+			</libro>
+			
+		</libros>	
+	</autor>
+	
+	
+	
+	<autor>
+		<codigo_autor>aut002</codigo_autor>
+		<nombre>Robert Kiyosaki</nombre>
+		<año_naci>1947</año_naci>
+		<pais>eeuu</pais>
+		<categoria>economia</categoria>
+		<libros>
+			<libro>
+				<codigo_libro>RK001</codigo_libro>
+				<nombre>padre rico padre pobre</nombre>
+				<año_libr>1997</año_libr>
+				<editorial>aguilar</editorial>
+				<paginas duracion="corto">207</paginas>
+			</libro>
+			
+			<libro>
+				<codigo_libro>RD002</codigo_libro>
+				<nombre>el cuadrante del flujo del dinero</nombre>
+				<año_libr>1998</año_libr>
+				<editorial>valor editions</editorial>
+				<paginas duracion="corto">320</paginas>
+			</libro>
+			
+			
+			
+		</libros>	
+	</autor>
+	
+	<autor>
+		<codigo_autor>aut003</codigo_autor>
+		<nombre>Warren buffet</nombre>
+		<año_naci>1930</año_naci>
+		<pais>eeuu</pais>
+		<categoria>inversion</categoria>
+		<libros>
+			<libro>
+				<codigo_libro>WB001</codigo_libro>
+				<nombre>invertir en empresas con ventaja competitiva</nombre>
+				<año_libr>2021</año_libr>
+				<editorial>gestion 2000</editorial>
+				<paginas duracion="corto">224</paginas>
+			</libro>
+			
+			<libro>
+				<codigo_libro>WB002</codigo_libro>
+				<nombre>100 consejos para invertir: y enriquecerse</nombre>
+				<año_libr>2018</año_libr>
+				<paginas duracion="corto">105</paginas>
+			</libro>
+		</libros>	
+	</autor>
+</autores>

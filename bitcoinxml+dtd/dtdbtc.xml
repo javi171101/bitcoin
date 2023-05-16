@@ -1,0 +1,14 @@
+<!ELEMENT autores (autor+)>
+	<!ELEMENT autor (codigo_autor, nombre, año_naci, pais, categoria, libros)>
+		<!ELEMENT codigo_autor (#PCDATA)>
+		<!ELEMENT nombre (#PCDATA)>
+		<!ELEMENT año_naci (#PCDATA)>
+		<!ELEMENT pais (#PCDATA)>
+		<!ELEMENT categoria (#PCDATA)>
+		<!ELEMENT libros (libro+)>
+			<!ELEMENT cuadro (codigo_libro, nombre, año_libr, editorial?, tecnica, museo)>
+				<!ELEMENT cod_cuadro (#PCDATA)>
+				<!ELEMENT año (#PCDATA)>
+				<!ELEMENT dimensiones (#PCDATA)>
+				<!ELEMENT paginas (#PCDATA)>
+				 <!ATTLIST paginas duracion (corto|medio|largo) #IMPLIED >

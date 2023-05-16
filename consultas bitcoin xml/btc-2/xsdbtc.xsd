@@ -1,0 +1,116 @@
+<schema  xmlns="http://www.w3.org/2001/XMLSchema">
+  <element name="autores">
+    
+    <complexType>
+      <sequence>
+        <element name="autor" maxOccurs="unbounded" minOccurs="0">
+          <complexType>
+		        <sequence>
+			
+				  <!-- restriccion patron tres letras y 3 numeros--> 
+				  <element  name="codigo_autor">
+					<annotation>
+						<documentation>tres letras y tres numeros</documentation>
+					 </annotation>
+					  <simpleType>
+							<restriction base="string">
+								<pattern value="[A-Z]{3}[0-9]{3}"/>
+							</restriction>
+						</simpleType>
+					</element>
+			  
+				<!-- restricion de caracteres --> 
+					  <element  name="nombre">
+						  <simpleType>
+								<restriction base="string">
+									<maxLength value="50"/>
+								</restriction>
+							</simpleType>
+						</element>
+					  <element type="short" name="año_naci"/>
+			  			  			 
+			  
+			  <!-- pais admitido eeuu-->
+				  <element  name="pais">
+					<simpleType>
+								  <restriction base="string">
+									<enumeration value="eeuu" />
+								  </restriction>
+					</simpleType>
+				  </element>
+				  				  				  
+				   <!-- categorias inversion y economia-->
+				  <element  name="categoria">
+					<simpleType>
+								  <restriction base="string">
+									<enumeration value="inversion" />
+									<enumeration value="economia" />
+								  </restriction>
+					</simpleType>
+				  </element>
+				  
+				  <element name="libros">
+					<complexType>
+					  <sequence>
+						<element name="libro" maxOccurs="unbounded" minOccurs="0">
+						  <complexType>
+							<sequence>
+							
+						  <element type="string" name="nombre"/>
+						  
+									<!-- restriccion patron dos letras y 3 numeros--> 
+						  <element  name="codigo_libro">
+							<annotation>
+								<documentation>dos letras y tres numeros</documentation>
+							 </annotation>
+							  <simpleType>
+									<restriction base="string">
+										<pattern value="[A-Z]{2}[0-9]{3}"/>
+									</restriction>
+								</simpleType>
+							</element>
+
+							  
+							  	<!-- elemento con solo permite 4 digitos-->						  
+							  <element  name="año_libr">
+							  
+									  <simpleType>
+													<restriction base="short">
+														<totalDigits value="4"/>
+													</restriction>
+												</simpleType>
+										</element>		
+							<!-- restricion de caracteres --> 
+					  <element  name="editorial">
+						  <simpleType>
+								<restriction base="string">
+									<maxLength value="20"/>
+								</restriction>
+							</simpleType>
+						</element>
+							  
+							  <!-- elemento con un atributo -->
+							  <element  name="paginas">
+									<complexType>
+										<simpleContent>
+											<extension base="string">
+												<attribute name="duracion" type="string" use= "required"/>
+											</extension>
+										</simpleContent>
+									</complexType>
+								</element>
+							  		  
+							  							  							  							  
+							</sequence>
+						  </complexType>
+						</element>
+					  </sequence>
+					</complexType>
+				  </element>
+            </sequence>
+          </complexType>
+        </element>
+      </sequence>
+    </complexType>
+  </element>
+</schema>
